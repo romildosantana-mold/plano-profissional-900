@@ -110,16 +110,17 @@ table tbody tr:nth-child(even) {
     padding-top: 20px;
 }
 
-	.header-flex {
+.header-flex {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-bottom: 40px;
 }
+
 
 .logo {
     height: 60px;
     width: auto;
+	 flex-shrink: 0; /* impede a logo de esticar */
 }
 
 .header-text h1 {
@@ -130,6 +131,13 @@ table tbody tr:nth-child(even) {
     margin: 6px 0 0;
     font-weight: 400;
 }
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 		
 </style>
 </head>
