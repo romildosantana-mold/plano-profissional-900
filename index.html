@@ -116,11 +116,25 @@ table tbody tr:nth-child(even) {
     gap: 20px;
 }
 
+.header-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px 50px;
+    margin-bottom: 40px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 
 .logo {
-    height: 60px;
+    height: 70px;
     width: auto;
-	 flex-shrink: 0; /* impede a logo de esticar */
+    flex-shrink: 0;
 }
 
 .header-text h1 {
@@ -130,12 +144,7 @@ table tbody tr:nth-child(even) {
 .header-text h2 {
     margin: 6px 0 0;
     font-weight: 400;
-}
-
-.header-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: #6c7a89;
 }
 
 		
@@ -144,13 +153,17 @@ table tbody tr:nth-child(even) {
 <body>
 <div class="container">
 
-	<div class="header-flex">
-    <img src="logo-msys-imob.jpg" alt="Msys Imob" class="logo">
+<div class="header-box">
 
-    <div class="header-text">
-        <h1>Planos 2026 – Msys Imob</h1>
-        <h2>Plano Profissional – Para Quem Está Crescendo</h2>
+    <div class="header-content">
+        <img src="logo-msys-imob.jpg" alt="Msys Imob" class="logo">
+
+        <div class="header-text">
+            <h1>Planos 2026 – Msys Imob</h1>
+            <h2>Plano Profissional – Para Quem Está Crescendo</h2>
+        </div>
     </div>
+
 </div>
 
     <p class="lead">
